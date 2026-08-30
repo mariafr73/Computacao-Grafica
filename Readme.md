@@ -2,9 +2,9 @@
   <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&amp;color=0:10172D,45:4B2545,100:E98A6C&amp;height=220&amp;section=header&amp;text=Computação%20Gráfica&amp;fontSize=44&amp;fontColor=FFFFFF&amp;animation=fadeIn&amp;fontAlignY=36&amp;desc=Do%20código%20à%20imagem&amp;descAlignY=58&amp;descSize=19" alt="Computação Gráfica"/>
 </p>
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;weight=500&amp;size=18&amp;pause=1200&amp;color=E98AA3&amp;center=true&amp;vCenter=true&amp;width=650&amp;lines=Pixels%2C+formas+e+transformações+✨;Modelagem%2C+renderização+e+criatividade+🖥️;Aprendendo+Computação+Gráfica+na+prática+🎨" alt="Apresentação animada"/>
-</p>
+<h3 align="center">
+  ✨ Pixels • Formas • Transformações • Renderização ✨
+</h3>
 
 <p align="center">
   <img src="https://img.shields.io/badge/BTI-UFERSA-633458?style=for-the-badge" alt="BTI UFERSA"/>
@@ -17,6 +17,9 @@
 Este repositório foi criado para reunir e organizar os arquivos desenvolvidos durante a disciplina de Computação Gráfica do Bacharelado em Tecnologia da Informação da UFERSA - Campus Pau dos Ferros.
 
 Aqui ficam armazenados códigos, exercícios, atividades, imagens e experimentos produzidos ao longo das aulas, formando um registro da evolução dos estudos durante a matéria.
+
+🔄 Em constante atualização: novos conteúdos e atividades serão adicionados conforme o andamento da disciplina.
+
 <br>
 
 <h2>✨ Materiais do repositório</h2>
@@ -135,7 +138,9 @@ Manter os materiais da disciplina em um único lugar, facilitando a organizaçã
 
 Desenvolvido e organizado por Maria Francisca, estudante de Bacharelado em Tecnologia da Informação na UFERSA - Campus Pau dos Ferros.
 
-
+<a href="https://github.com/mariafr73">
+  <img src="https://img.shields.io/badge/GitHub-mariafr73-633458?style=for-the-badge&amp;logo=github&amp;logoColor=FFFFFF" alt="GitHub de Maria Francisca"/>
+</a>
 
 <br>
 
