@@ -18,9 +18,6 @@ Este repositório foi criado para reunir e organizar os arquivos desenvolvidos d
 
 Aqui ficam armazenados códigos, exercícios, atividades, imagens e experimentos produzidos ao longo das aulas, formando um registro da evolução dos estudos durante a matéria.
 
-[!NOTE]
-Este repositório está em constante atualização conforme novos conteúdos e atividades são desenvolvidos.
-
 <br>
 
 <h2>✨ Materiais do repositório</h2>
