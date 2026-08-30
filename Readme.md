@@ -17,7 +17,6 @@
 Este repositório foi criado para reunir e organizar os arquivos desenvolvidos durante a disciplina de Computação Gráfica do Bacharelado em Tecnologia da Informação da UFERSA - Campus Pau dos Ferros.
 
 Aqui ficam armazenados códigos, exercícios, atividades, imagens e experimentos produzidos ao longo das aulas, formando um registro da evolução dos estudos durante a matéria.
-
 <br>
 
 <h2>✨ Materiais do repositório</h2>
