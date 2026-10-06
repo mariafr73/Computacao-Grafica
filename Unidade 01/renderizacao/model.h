@@ -38,4 +38,8 @@ void translate_model(Vertex *vertices, int vcount, float tx, float ty, float tz)
 
 void rotate_model(Vertex *vertices, int vcount, float theta);
 
+void shear_model(Vertex *vertices, int vcount, float shx, float shy);
+
+void reflect_model(Vertex *vertices, int vcount);
+
 #endif

@@ -13,6 +13,8 @@ int main(void){
 
   scale_model(vertices, vcount, 0.8f);
   rotate_model(vertices, vcount, 0.52f);
+  shear_model(vertices, vcount, 0.2f, 0.0f);
+  reflect_model(vertices, vcount);
   translate_model(vertices, vcount, 0.1f, 0.0f, 0.0f);
 
   render_points(vertices, vcount);
