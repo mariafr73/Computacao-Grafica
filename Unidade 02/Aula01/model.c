@@ -1,18 +1,3 @@
-/**
- * \file model.c
- *
- * \brief ImplementaÃ§Ã£o das funÃ§Ãµes de manipulaÃ§Ã£o do modelo 3D.
- *
- * \author
- * Petrucio Ricardo Tavares de Medeiros \n
- * Universidade Federal Rural do Semi-Ãrido \n
- * Departamento de Engenharias e Tecnologia \n
- * petrucio at ufersa (dot) edu (dot) br
- *
- * \version 1.0
- * \date May 2025
- */
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

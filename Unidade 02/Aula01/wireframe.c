@@ -1,18 +1,3 @@
-/**
- * \file wireframe.c
- *
- * \brief ImplementaÃ§Ã£o do arquivo principal de renderizaÃ§Ã£o do modelo 3D.
- *
- * \author
- * Petrucio Ricardo Tavares de Medeiros \n
- * Universidade Federal Rural do Semi-Ãrido \n
- * Departamento de Engenharias e Tecnologia \n
- * petrucio at ufersa (dot) edu (dot) br
- *
- * \version 1.0
- * \date May 2025
- */
-
 #include "model.h"
 
 int main() {

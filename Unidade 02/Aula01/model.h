@@ -1,18 +1,3 @@
-/**
- * \file model.h
- *
- * \brief Header com protÃ³tipos de funÃ§Ãµes para manipulaÃ§Ã£o de modelo 3D.
- *
- * \author
- * Petrucio Ricardo Tavares de Medeiros \n
- * Universidade Federal Rural do Semi-Ãrido \n
- * Departamento de Engenharias e Tecnologia \n
- * petrucio at ufersa (dot) edu (dot) br
- *
- * \version 1.0
- * \date May 2025
- */
-
 #ifndef MODEL_H
 #define MODEL_H
 
