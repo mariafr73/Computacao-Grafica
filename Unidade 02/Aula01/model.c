@@ -124,16 +124,60 @@ void resizing( Vertex p, Camera cam, Point2D *out){
   out -> y = (int)((1.0f - y_persp) * HEIGHT / 2.0f);
 }
 
+void cb(Point2D a, Point2D b, Point2D c, unsigned char red, unsigned char green, unsigned char blue) {
+    //definindo o bounding box
+    int x_min = floorf(fminf(fminf(a.x, b.x), c.x));
+    int y_min = ceilf(fminf(fminf(a.y, b.y), c.y));
+    int x_max = floorf(fmaxf(fmaxf(a.x, b.x), c.x));
+    int y_max = ceilf(fmaxf(fmaxf(a.y, b.y), c.y));
+
+    //calcular a area total
+    float areat = 0.5 * (a.x * (b.y - c.y) + b.x * (c.y - a.y) + c.x * (a.y - b.y));
+
+    for(int x = x_min; x <= x_max; x++){
+        for(int y = y_min; y <= y_max; y++){
+            Point2D p = {x, y};
+
+            //Encontrando as areas dos sub-triangulos
+            float area_pbc = 0.5 * (p.x * (b.y - c.y) + b.x * (c.y - p.y) + c.x * (p.y - b.y));
+            float area_apc = 0.5 * (a.x * (p.y - c.y) + p.x * (c.y - a.y) + c.x * (a.y - p.y));
+            float area_abp = 0.5 * (a.x * (b.y - p.y) + b.x * (p.y - a.y) + p.x * (a.y - b.y));
+
+            //Encontrando alpha, beta e gamma
+            float alpha = area_pbc / areat;
+            float beta = area_apc / areat;
+            float gamma = area_abp / areat;
+
+            if(alpha >= 0.0 && beta >= 0.0 && gamma >= 0.0){
+                set_pixel(x, y, red, green, blue);
+            }
+        }
+    }
+  }
+
 void render_faces(Vertex *vertices, Face *faces, int vcount, int fcount, Camera cam) {
   for (int i = 0; i < fcount; i++) {
-      Face face = faces[i];
-      for (int j = 0; j < face.n; j++) {
-          Vertex v0 = vertices[face.verts[j] - 1];
-          Vertex v1 = vertices[face.verts[(j + 1) % face.n] - 1];
-	        Point2D p0, p1;
-          resizing(v0, cam, &p0);
-          resizing(v1, cam, &p1);
-          draw_line(p0.x, p0.y, p1.x, p1.y);
-      }
+    Face face = faces[i];
+    Vertex v0 = vertices[face.verts[0] - 1];
+    Vertex v1 = vertices[face.verts[1] - 1];
+    Vertex v2 = vertices[face.verts[2] - 1];
+
+    Point2D p0, p1, p2;
+
+    resizing(v0, cam, &p0);
+    resizing(v1, cam, &p1);
+    resizing(v2, cam, &p2);
+
+    cb(p0, p1, p2, rand() % 255, 0, rand() % 255);
+
+    /*
+    for (int j = 0; j < face.n; j++) {
+        Vertex v0 = vertices[face.verts[j] - 1];
+        Vertex v1 = vertices[face.verts[(j + 1) % face.n] - 1];
+        Point2D p0, p1;
+        resizing(v0, cam, &p0);
+        resizing(v1, cam, &p1);
+        draw_line(p0.x, p0.y, p1.x, p1.y);
+    }*/
   }
 }

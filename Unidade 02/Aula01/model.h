@@ -47,6 +47,8 @@ Vertex normalize(Vertex v);
 
 void resizing( Vertex p, Camera cam, Point2D *out);
 
+void cb(Point2D a, Point2D b, Point2D c, unsigned char red, unsigned char green, unsigned char blue);
+
 void render_faces(Vertex *vertices, Face *faces, int vcount, int fcount, Camera cam);
 
 #endif
